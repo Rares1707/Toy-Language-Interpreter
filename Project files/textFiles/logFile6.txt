@@ -1,0 +1,154 @@
+Program state ID: 6
+Execution Stack: [(int v;(Ref int a;(v=10;(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a))))))))]
+Symbol Table: {}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(Ref int a;(v=10;(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a))))))), int v]
+Symbol Table: {}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(Ref int a;(v=10;(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a)))))))]
+Symbol Table: {v=0}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(v=10;(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a)))))), Ref int a]
+Symbol Table: {v=0}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(v=10;(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a))))))]
+Symbol Table: {a=(0, int), v=0}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a))))), v=10]
+Symbol Table: {a=(0, int), v=0}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(new(a, 22);(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a)))))]
+Symbol Table: {a=(0, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a)))), new(a, 22)]
+Symbol Table: {a=(0, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {}
+
+Program state ID: 6
+Execution Stack: [(fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ;(print(v);print(readHeap(a))))]
+Symbol Table: {a=(1, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {1->22; }
+
+Program state ID: 6
+Execution Stack: [(print(v);print(readHeap(a))), fork((writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))) ]
+Symbol Table: {a=(1, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {1->22; }
+
+Program state ID: 6
+Execution Stack: [(print(v);print(readHeap(a)))]
+Symbol Table: {a=(1, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {1->22; }
+
+Program state ID: 7
+Execution Stack: [(writeHeap(a, 30);(v=32;(print(v);print(readHeap(a)))))]
+Symbol Table: {a=(1, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {1->22; }
+
+Program state ID: 6
+Execution Stack: [print(readHeap(a)), print(v)]
+Symbol Table: {a=(1, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {1->22; }
+
+Program state ID: 7
+Execution Stack: [(v=32;(print(v);print(readHeap(a)))), writeHeap(a, 30)]
+Symbol Table: {a=(1, int), v=10}
+Output: []
+FileTable: []
+MyHeap: {1->22; }
+
+Program state ID: 6
+Execution Stack: [print(readHeap(a))]
+Symbol Table: {a=(1, int), v=10}
+Output: [10]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 7
+Execution Stack: [(v=32;(print(v);print(readHeap(a))))]
+Symbol Table: {a=(1, int), v=10}
+Output: [10]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 6
+Execution Stack: []
+Symbol Table: {a=(1, int), v=10}
+Output: [10, 30]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 7
+Execution Stack: [(print(v);print(readHeap(a))), v=32]
+Symbol Table: {a=(1, int), v=10}
+Output: [10, 30]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 7
+Execution Stack: [(print(v);print(readHeap(a)))]
+Symbol Table: {a=(1, int), v=32}
+Output: [10, 30]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 7
+Execution Stack: [print(readHeap(a)), print(v)]
+Symbol Table: {a=(1, int), v=32}
+Output: [10, 30]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 7
+Execution Stack: [print(readHeap(a))]
+Symbol Table: {a=(1, int), v=32}
+Output: [10, 30, 32]
+FileTable: []
+MyHeap: {1->30; }
+
+Program state ID: 7
+Execution Stack: []
+Symbol Table: {a=(1, int), v=32}
+Output: [10, 30, 32, 30]
+FileTable: []
+MyHeap: {1->30; }
+
