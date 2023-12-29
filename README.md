@@ -9,9 +9,12 @@ I made this for the Advanced Methods of Programming module of my university. It 
 - built using layered architecture
 - follows the OOP paradigm
 - any modifications to the repository data made during the execution of the application will persist
+- typechecker
+- GUI
 
 ## Technologies used
 - Java
-
+- JavaFX 
+  
 ## Screenshots
 Will be added after I implement the GUI.
