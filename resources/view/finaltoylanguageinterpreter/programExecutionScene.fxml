@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.finaltoylanguageinterpreter.ProgramExecutionSceneController"
+            prefHeight="400.0" prefWidth="600.0">
+    <TableView fx:id="heapTableView" layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="heapAddressColumn" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="heapValueColumn" prefWidth="100.0" text="Value" />
+        </columns>
+    </TableView>
+    <Label layoutX="50.0" layoutY="25.0" text="Heap Table" />
+    <ListView fx:id="outputListView" layoutX="500.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="500.0" layoutY="25.0" text="Output" />
+    <ListView fx:id="fileListView" layoutX="950.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="950.0" layoutY="25.0" text="File Table" />
+    <Label layoutX="50.0" layoutY="475.0" text="Program state IDs" />
+    <ListView fx:id="programStatesListView" layoutX="50.0" layoutY="500.0" prefHeight="200.0" prefWidth="200.0" />
+    <ListView fx:id="executionStackListView" layoutX="500.0" layoutY="500.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="500.0" layoutY="475.0" text="Execution stack" />
+    <TableView fx:id="symbolTableView" layoutX="950.0" layoutY="500.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="symbolTableVariableNameColumn" prefWidth="100.0" text="Variable name" />
+            <TableColumn fx:id="symbolTableValueColumn" prefWidth="100.0" text="Value" />
+        </columns>
+    </TableView>
+    <Label layoutX="950.0" layoutY="475.0" text="Symbol table" />
+    <TextField fx:id="numberOfProgramStates" layoutX="342.0" layoutY="350.0" editable="false" />
+    <Label layoutX="342.0" layoutY="322.0" text="Number of program states" />
+    <Button fx:id="executeOneStepButton" layoutX="530.0" layoutY="350.0" prefHeight="36.0" prefWidth="140.0" text="Execute one step" />
+
+</AnchorPane>
