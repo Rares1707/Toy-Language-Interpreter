@@ -13,6 +13,3 @@ I made this for the Advanced Methods of Programming module of my university. It 
 ## Technologies used
 - Java
 - JavaFX 
-  
-## Screenshots
-Will be added after I implement the GUI.
