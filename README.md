@@ -1,7 +1,7 @@
 # Toy-Language-Interpreter
 
 ## Overview
-I made this for the Advanced Methods of Programming module of my university. It interprets a toy language designed by the coordinator teacher and the interpreter itself adheres to the structure required by the said teacher. Besides basic funtionalities such as the if statement, while statement, etc., the toy language features multi-threaded execution, memory allocation and a garbage collector.
+Interpreter and runtime system for a custom multi-threaded programming language in Java, modeling program execution using core runtime structures including execution stack, symbol tables, and program state. It is a modular interpreter architecture with parsing and an execution engine, supporting concurrent program execution and reference-counting garbage collection, with a JavaFX interface to visualize interpreter state and program execution for debugging and analysis.
 
 ## Features
 - built using layered architecture
